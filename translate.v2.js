@@ -11,7 +11,7 @@
     da: "Dansk", fi: "Suomi", no: "Norsk", uk: "Українська"
   };
 
-  const BASE = "https://rosalinda-blog.life.conway.tech";
+  const BASE = window.location.origin;
 
   function getSaved() {
     try { return localStorage.getItem("rosaLang"); } catch(e) { return null; }
